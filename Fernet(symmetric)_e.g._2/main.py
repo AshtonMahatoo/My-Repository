@@ -2,7 +2,6 @@
 # Ashton Mahatoo Sr
 # 7/2023
 
-# This is a completed example of Symmetric Encryption (Single key is used for encryption and decryption) of a file.
 
 import os
 import fileinput
@@ -12,16 +11,9 @@ from cryptography.fernet import Fernet
 
 # Fernet uses symmetric encryption where only one key (a secret key) is used to both encrypt and decrypt electronic data. 
 # The entities communicating via symmetric encryption must exchange the key so that it can also be used in the decryption process. 
-# This encryption method differs from asymmetric encryption where a pair of keys - one public and one private - is used to encrypt and decrypt messages.
-# 
 
+############################################ Start of Encryption #########################################
 
-
-
-
-
-
-############################################ Start of Encryption ######################################################
 ### This block of code takes in a file from the user 
 inputFileName = input(" Please enter the source filename you would like to encrypt!!: ")
 inputFile = open(inputFileName, "rb")
